@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+div,
+li {
+  box-sizing: border-box;
+}
+
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0, 0, 0, .6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.section_inner {
+  padding: 50px 10% 30px;
+}
+
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  color: black;
+}
+
+.key h1 {
+  font-size: 2.5rem;
+}
+
+.section_title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section_title h1 {
+  color: #fff;
+}
+
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+
+.concept-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.concept-text {
+  width: 60%;
+}
+
+.concept-image {
+  width: 35%;
+}
+
+.menu-background {
+  background-image: url(../images/sample_menu_bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Recommended Menu */
+.recommended-menu-container ul {
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.menu-item-pancake {
+  width: 49%; /* Each item takes roughly half the container width */
+  display: flex; /* Make it a flex container for image and text */
+  align-items: center; /* Vertically align items in the center */
+  margin-bottom: 20px; /* Space between rows */
+  background-color: #fff; /* Ensure white background for the whole item */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-item-pancake img {
+  width: 55%; /* Image takes 55% of the item width */
+  height: auto;
+  margin-right: 15px; /* Space between image and text */
+  border-radius: 5px; /* Slightly rounded corners for the image */
+}
+
+.pancake-text-content {
+  width: 55%; /* Text content takes 55% of the item width */
+  text-align: left; /* Align text to the left */
+  /* background-color: white; This is handled by the parent .menu-item-pancake */
+  padding: 0px; /* Padding inside the text content */
+}
+
+.pancake-text-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.pancake-text-content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Coffee Menu */
+.coffee-menu-container {
+  margin: 20px;
+}
+
+.coffee-columns-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 20px solid #90EE90;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.coffee-column {
+  width: 49%;
+}
+
+.coffee-menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.coffee-menu-item .caffee_menu_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.coffee-item-text h2 {
+  font-size: 1rem;
+}
+
+.coffee-item-text p {
+  font-size: 0.9rem;
+}
+
+/* ACCESS Section */
+.section_title{
+  line-height: 10px;
+}
+.access-item dl {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.access-item dt {
+  width: 30%;
+  font-weight: bold;
+}
+
+.access-item dd {
+  width: 70%;
+}
+
+.google-map {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+footer {
+  background-color: #251e19;
+  color: white;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.footer-nav-list a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+  display: flex; /* Make anchor a flex container to align li content */
+  align-items: center;
+}
+
+.footer-nav-list li {
+  list-style: none;
+  /* `display: inline-block` removed as `a` is now flex */
+}
+
+.footer-nav-list img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+}
